@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZRaurora瑞不卷 - 个人主页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">⛏️</span>
+                <span class="logo-text">ZRaurora个人主页</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#mc-server" class="nav-link">MC服务器</a></li>
+                <li><a href="#downloads" class="nav-link">程序下载</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页英雄区 -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <div class="avatar-ring"></div>
+                <div class="avatar-inner">
+                    <span class="avatar-emoji">🎮</span>
+                </div>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-gradient">ZRaurora</span>
+                <span class="title-sub">瑞不卷</span>
+            </h1>
+            <p class="hero-desc">热爱 Minecraft</p>
+            <div class="hero-buttons">
+                <a href="#mc-server" class="btn btn-primary">
+                    <span>🎯</span> 查看MC服务器
+                </a>
+                <a href="#downloads" class="btn btn-secondary">
+                    <span>📦</span> 下载
+                </a>
+            </div>
+            <div class="hero-scroll">
+                <div class="scroll-arrow">向下滚动↓</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MC服务器信息 -->
+    <section id="mc-server" class="section mc-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">MINECRAFT</span>
+                <h2 class="section-title">我的 MC 服务器</h2>
+                <p class="section-subtitle">欢迎来我的服务器一起玩！</p>
+            </div>
+
+            <div class="server-cards">
+                <!-- 服务器 -->
+                <div class="server-card server-card-main">
+                    <div class="card-badge">🔥 主推</div>
+                    <div class="card-header">
+                        <div class="server-icon">
+                            <span class="icon-grass">🌳</span>
+                        </div>
+                        <div class="server-info">
+                            <h3>生存服务器</h3>
+                            <p class="server-version">Java版 1.20.1 forge· 生存模式</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="server-detail">
+                            <div class="detail-item">
+                                <span class="detail-label">服务器地址</span>
+                                <div class="detail-value address-box">
+                                    <code id="serverAddr">play.simpfun.cn:38411</code>
+                                    <button class="copy-btn" onclick="copyText('serverAddr')" title="复制地址">
+                                        📋 复制
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">服务器状态</span>
+                                <div class="detail-value">
+                                    <span class="status-dot status-online"></span>
+                                    <span class="status-text">在线运行中</span>
+                                </div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-item">
+                                    <span class="detail-label">当前在线</span>
+                                    <span class="detail-value highlight">-404-</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">延迟</span>
+                                    <span class="detail-value highlight">较低</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="server-features">
+                            <span class="feature-tag">✨ 机械动力</span>
+                            <span class="feature-tag">🏪 TACZ</span>
+                            <span class="feature-tag">🎯 沉浸式飞机</span>
+                            <span class="feature-tag">🐾 精妙背包</span>
+                        </div>
+                    </div>
+                </div>
+            <!-- 服务器说明 -->
+            <div class="server-notice">
+                <div class="notice-icon">💡</div>
+                <div class="notice-content">
+                    <h4>加入服务器须知</h4>
+                    <ul>
+                        <li>请先前往网址下载模组：<strong>https://pan.huang1111.cn/s/2vABATN</strong></li>
+                        <li>禁止恶意破坏、偷窃他人财物，违者永久封禁</li>
+                        <li>遇到问题请在服内 @ 管理员</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 程序下载 -->
+    <section id="downloads" class="section download-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">DOWNLOADS</span>
+                <h2 class="section-title">程序下载</h2>
+                <p class="section-subtitle">无聊有趣，励志没用</p>
+            </div>
+
+            <div class="download-grid">
+                <!-- 下载项 1 -->
+                <div class="download-card">
+                    <div class="download-icon">
+                        <span class="icon-blue">🧹</span>
+                    </div>
+                    <div class="download-info">
+                        <h3>PC 优化大师</h3>
+                        <p class="download-desc">Windows 电脑清理和游戏优化工具，一键清理垃圾文件，优化游戏性能，下载密码：ewli。</p>
+                        <div class="download-meta">
+                            <span class="meta-tag">Windows</span>
+                            <span class="meta-size">v1.0 · 92KB</span>
+                        </div>
+                    </div>
+                    <div class="download-actions">
+                        <a href="https://printstudio.lanzoul.com/b0139xgxqd" class="download-btn" download>
+                            <span>⬇️</span> 下载
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 下载项 2 -->
+                <div class="download-card">
+                    <div class="download-icon">
+                        <span class="icon-green">📦</span>
+                    </div>
+                    <div class="download-info">
+                        <h3>网页MC 启动器</h3>
+                        <p class="download-desc">一键启动网页 Minecraft ，已停更，部分网页已无法打开，已经开源，密码nc21。</p>
+                        <div class="download-meta">
+                            <span class="meta-tag">Windows</span>
+                            <span class="meta-size">v2.6</span>
+                        </div>
+                    </div>
+                    <div class="download-actions">
+                        <a href="https://printstudio.lanzoul.com/b0139izpib" class="download-btn" download>
+                            <span>⬇️</span> 下载
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 下载项 3 -->
+                <div class="download-card">
+                    <div class="download-icon">
+                        <span class="icon-purple">🎨</span>
+                    </div>
+                    <div class="download-info">
+                        <h3>MC 皮肤制作器</h3>
+                        <p class="download-desc">第三方制作3D Minecraft 皮肤，支持拼装，免费使用下载。</p>
+                        <div class="download-meta">
+                            <span class="meta-tag">网页版</span>
+                            <span class="meta-size"> 在线使用</span>
+                        </div>
+                    </div>
+                    <div class="download-actions">
+                        <a href="https://studio.tdogmc.cn/?lang=zh-CN" class="https://studio.tdogmc.cn/?lang=zh-CN">
+                            <span>🔗</span> 打开
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 下载项 4 -->
+                <div class="download-card">
+                    <div class="download-icon">
+                        <span class="icon-orange">📝</span>
+                    </div>
+                    <div class="download-info">
+                        <h3>3D FPS小游戏</h3>
+                        <p class="download-desc">豆包生成的，自己玩去吧。</p>
+                        <div class="download-meta">
+                            <span class="meta-tag">html</span>
+                            <span class="meta-size">v1.0</span>
+                        </div>
+                    </div>
+                    <div class="download-actions">
+                        <a href="https://pan.huang1111.cn/s/A6XlBTB" class="download-btn" download>
+                            <span>⬇️</span> 下载
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 下载项 5 -->
+                <div class="download-card">
+                    <div class="download-icon">
+                        <span class="icon-pink">🎵</span>
+                    </div>
+                    <div class="download-info">
+                        <h3>PVZ</h3>
+                        <p class="download-desc">PVZ下载。</p>
+                        <div class="download-meta">
+                            <span class="meta-tag">EXE</span>
+                            <span class="meta-size">来源于网络</span>
+                        </div>
+                    </div>
+                    <div class="download-actions">
+                        <a href="https://pan.huang1111.cn/s/E7bWlTb" class="download-btn" download>
+                            <span>⬇️</span> 下载
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 下载项 6 -->
+                <div class="download-card download-card-coming">
+                    <div class="download-icon">
+                        <span class="icon-gray">🚧</span>
+                    </div>
+                    <div class="download-info">
+                        <h3>更多工具开发中...</h3>
+                        <p class="download-desc">还有更多好玩的小工具正在开发中，敬请期待！</p>
+                        <div class="download-meta">
+                            <span class="meta-tag">敬请期待</span>
+                        </div>
+                    </div>
+                    <div class="download-actions">
+                        <button class="download-btn download-btn-disabled" disabled>
+                            <span>⏳</span> 开发中
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-left">
+                    <span class="section-tag">ABOUT ME</span>
+                    <h2 class="about-title">关于我</h2>
+                    <div class="about-text">
+                        <p>你好！我是 <strong>ZRaurora瑞不卷</strong>，一个热爱 Minecraft 的普通人。</p>
+                        <p>平时喜欢折腾各种小工具、玩模组。</p>
+                        <p>这个网站是我的个人小站，放一些我做的东西和服务器信息。欢迎来玩！</p>
+                    </div>
+                    <div class="about-tags">
+                        <span class="about-tag">⛏️ Minecraft 玩家</span>
+                        <span class="about-tag">💻 编程爱好者（不是很懂）</span>
+                        <span class="about-tag">🎮 游戏玩家（菜）</span>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="stats-card">
+                        <div class="stat-item">
+                            <span class="stat-number">1个</span>
+                            <span class="stat-label">MC 服务器</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">小程序</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">额，不多</span>
+                            <span class="stat-label">服务器玩家</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">快乐值</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span>⛏️</span> ZRaurora瑞不卷
+                    </div>
+                    <p class="footer-desc">一个杵在世界角落的个人小站</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>导航</h4>
+                        <a href="#home">首页</a>
+                        <a href="#mc-server">MC服务器</a>
+                        <a href="#downloads">程序下载</a>
+                        <a href="#about">关于我</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>账号</h4>
+                        <a href="#">QQ: 3785116949@qq.com</a>
+                        <a href="https://space.bilibili.com/3546587483605834">B站: @ZRaurora瑞不卷</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 ZRaurora瑞不卷</p>
+                <p class="footer-icp">个人主页</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" id="backToTop" title="回到顶部">
+        ↑
+    </button>
+
+    <!-- 复制提示 -->
+    <div class="copy-toast" id="copyToast">
+        ✅ 已复制到剪贴板
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
